@@ -1,18 +1,12 @@
-# Solicitar datos al usuario
-print("Ingresar gasto:")
-gasto = float(input())
-
-print("Dinero recibido")
-pagado = float(input())
-
-# Calcular el vuelto
-vuelto = pagado - gasto
-pesos = int(vuelto)
-centavos = round((vuelto - pesos) * 100)
-
-# Mostrar el informe
-print("\nVuelto\n")
-print("Pesos:")
-print(pesos)
-print("Centavos:")
-print(centavos)
+def change():
+    expense =23.75
+    money =100
+    vuelto = money - expense
+    pesos = int(vuelto)
+    centavos = int((vuelto - pesos)*100)
+    print(f"Ingresar gasto:\n{expense}")
+    print(f"Dinero recibido\n{money}\n")
+    print("Vuelto\n")
+    print(f"Pesos:\n{pesos}")
+    print(f"Centavos:\n{centavos}")
+change()
